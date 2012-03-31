@@ -2,4 +2,5 @@
   :description "FIXME: write description"
   :dependencies [[org.clojure/clojure "1.3.0"]]
   :aot  [clojure-aot-example.core]
-  :main clojure-aot-example.core)
+  :main clojure-aot-example.core
+  :omit-source true)
