@@ -1,4 +1,4 @@
-(ns clojure-aot-example.core
+(ns core
   (:gen-class))
 
 (def foo "foo")
