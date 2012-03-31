@@ -12,8 +12,11 @@
   (def foo "baz")
   (println (str "Third value of foo " foo)))
   
+(alter-var-root #'foo (fn [el] "altered"))
+(println "Foo after alter-var-root" foo)
 
 (defn -main [& args]
   (println "Input new value for foo")
   (def foo (read-line))
   (println (str "Foos value from read-line " foo)))
+
