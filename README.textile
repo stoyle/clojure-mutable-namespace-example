@@ -1,0 +1,11 @@
+h1. Small repo showing mutability of Vars
+
+In Clojure it is a convention not to change Vars in production systems, but Clojure itself will not stop you from doing bad things. The reason for this "utility" is so that the repl can function well.
+
+For the record, the only official way to change a Var is through thread local binding.
+
+This leiningen project is set up so that it is compiled ahead of time. So you can basically do:
+
+bc.
+lein uberjar
+java -jar clojure-mutable-namespace-example-1.0.0-SNAPSHOT-standalone.jar
